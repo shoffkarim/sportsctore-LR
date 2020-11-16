@@ -6,7 +6,7 @@ import { ShopConnector } from "./shop/ShopConnector";
 
 export default class App extends Component {
   render() {
-    return
+    return (
     // eslint-disable-next-line no-unreachable
     <Provider store={ SportsStoreDataStore }>
       <Router>
@@ -16,5 +16,6 @@ export default class App extends Component {
         </Switch>
       </Router>
     </Provider>
+    )
   }
 }
