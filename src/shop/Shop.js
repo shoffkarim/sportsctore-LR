@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { CategoryNavigation } from "./CategoryNavigation";
 import { ProductList } from "./ProductList";
+import { CartSummary } from "./CartSummary";
 
 export class Shop extends Component {
 
@@ -12,6 +13,7 @@ export class Shop extends Component {
           <div className="navbar-brand">
             SPORTS STORE
           </div>
+          <CartSummary { ...this.props } />
         </div>
       </div>
       <div className="row">
